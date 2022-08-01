@@ -1,0 +1,127 @@
+:root {
+    --light:#ffffff;
+    --dark: #212121;
+    --primary: powderblue; 
+    --secondary: #0097a7;
+    --lightGray: #dfe9f3;
+    --gradient:  linear-gradient(to right, rgba(0,86,112,1) 0%, rgba(75,122,209,1) 100%);
+
+}
+/* Globales */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* hack for box model */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem; /* 1rem = 10 px */
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 4.6rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+}
+
+@media (min-width: 778px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        column-gap: 2rem;
+    }
+}
+
+/* navbar styles */
+
+.barra {
+    background-color: var(--dark);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--lightGray);
+    padding-top: 2rem;
+}
+
+.header-navbar {
+    background-color: var(--secondary);
+    padding: 2rem 0;
+}
+
+.navbar .header-navbar a {
+    color: var(--light);
+    text-align: center;
+    padding: 1rem 0;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-home span {
+    font-weight: 300;
+}
+
+
+.navbar a {
+    margin: 1.5rem 0;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--dark);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Main styles */
+.main-doc {
+    background-color: var(--primary);
+    padding: 2rem;
+}
+
+.info-btn {
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: var(--secondary);
+    padding: 2rem;
+    color: var(--light);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.code-editor {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(0,0,0, 80%);
+    color: var(--secondary)
+}

@@ -1,23 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-    h1 {text-align: center;}
-    h2 {text-align: center;}
-</style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* for free code camp buy you can put in the style */
+        @media (min-width: 778px) {
+    h1{
+        font-size: 3.8rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+}
+    </style>
 </head>
-<body style="background-color:powderblue;">
+<body>
     <h1>Technical Documentation Page. </h1>
     <h2>By Pablo and Marcelo</h2>
-    <div class="margin-top" style="max-width:1440px"></div>
-    <div class="row-padding"></div>
-    <div class="leftpart"></div>
-        <div class="card"></div>
-            <div class="displaycont"></div>
-                <img src="C:\Users\marce\OneDrive\Desktop\repo2\microverse.png" style="width:20%">
+
+    <div class="container container-grid">
+        <div class="barra">
+            <nav class="navbar" id="navbar">
+                <header class="header-navbar">
+                    <a class="navbar-home" href="./.">
+                        Documental Information
+                    </a>
+                </header>
+                
+                <a class="nav-link" href="#title_of_topic_1">Title of topic 1</a>
+                <a class="nav-link" href="#title_of_topic_2">Title of topic 2</a>
+                <a class="nav-link" href="#title_of_topic_3">Title of topic 3</a>
+                <a class="nav-link" href="#title_of_topic_4">Title of topic 4</a>
+                <a class="nav-link" href="#title_of_topic_5">Title of topic 5</a>
+            </nav>
+        </div>
+        <main id="main-doc" class="main-doc">
+            <section class="main-section" id="title_of_topic_1">
+                <header>
+                    <h2>Title of Topic 1</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, hic.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, enim.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem natus molestiae labore id cupiditate.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit temporibus qui quisquam facilis.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aliquid ipsum!</li>
+                </ul>
+                <code class="code-editor">
+                    let a = 5
+                    const b = 3
+                </code>
+               
+            </section>
+            <section class="main-section" id="title_of_topic_2">
+                <header >
+                    <h2>Title of Topic 2</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa aspernatur ea soluta libero, at impedit excepturi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa aspernatur ea soluta libero, at impedit excepturi?</p>
+                <code class="code-editor">
+                    console.log(a +b)
+                </code>
+                
+            </section>
+            <section class="main-section" id="title_of_topic_3">
+                <header>
+                    <h2>Title of Topic 3</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa aspernatur ea soluta libero, at impedit excepturi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa aspernatur ea soluta libero, at impedit excepturi?</p>
+                <code class="code-editor">
+                    function add (a,b) {
+                        return a + b;
+                    }
+                </code>
+            </section>
+            <section class="main-section" id="title_of_topic_4">
+                <header>
+                    <h2>Title of Topic 4</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa aspernatur ea soluta libero, at impedit excepturi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa aspernatur ea soluta libero, at impedit excepturi?</p>
+                <code class="code-editor">
+                    let array = [0,1,2,3,4,5]
+                </code>
+            </section>
+            <section class="main-section" id="title_of_topic_5">
+                <header id="title_of_topic_5">
+                    <h2>Title of Topic 5</h2>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa aspernatur ea soluta libero, at impedit excepturi?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa aspernatur ea soluta libero, at impedit excepturi?</p>
+                <code class="code-editor">
+                    const c = array[3]
+                </code>
+            </section>
+        </main>
+    </div>
+            
 </body>
 </html>
